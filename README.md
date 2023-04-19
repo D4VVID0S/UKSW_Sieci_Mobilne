@@ -1,4 +1,4 @@
-# UKSW_Sieci_Mobilne
+# UKSW_Sieci_Mobilne_i_Bezprzewodowe
 UKSW Sieci mobilne i bezprzewodowe
 
 * [Projekt nr. 5 - Symulacja problemu 5-ciu filozofów z użyciem koncepcji](https://onedrive.live.com/?id=81D25947EE698777%2140621&cid=81D25947EE698777)
