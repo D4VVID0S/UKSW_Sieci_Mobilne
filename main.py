@@ -2,7 +2,7 @@ import threading
 import random
 import time
 
-# inheriting threading class in Thread module
+#inheriting threading class in Thread module
 class Philosopher(threading.Thread):
     running = True  #used to check if everyone is finished eating
 
@@ -16,7 +16,7 @@ class Philosopher(threading.Thread):
     def run(self):
         while(self.running):
             # Philosopher is thinking (but really is sleeping).
-            time.sleep(3)
+            time.sleep(30)
             print ('Philosopher %s is hungry.' % self.index)
             self.dine()
 
@@ -28,7 +28,7 @@ class Philosopher(threading.Thread):
             locked = fork2.acquire(False) 
             if locked: break #if right fork is not available leave left fork
             fork1.release()
-            print ('Philosopher %s swaps forks.' % self.index)
+            print('Philosopher %s swaps forks.' % self.index)
             fork1, fork2 = fork2, fork1
         else:
             return
@@ -39,7 +39,7 @@ class Philosopher(threading.Thread):
  
     def dining(self):			
         print ('Philosopher %s starts eating. '% self.index)
-        time.sleep(3)
+        time.sleep(30)
         print ('Philosopher %s finishes eating and leaves to think.' % self.index)
 
 def main():
@@ -51,7 +51,7 @@ def main():
 
     Philosopher.running = True
     for p in philosophers: p.start()
-    time.sleep(10)
+    time.sleep(100)
     Philosopher.running = False
     print ("Now we're finishing.")
  
