@@ -1,3 +1,11 @@
+'''
+Zespół:
+Agata Wąsik
+Magda Sarełło
+Maciej Nachtygal
+Matteo Dawide Catalani
+'''
+
 import threading
 import random
 import time
